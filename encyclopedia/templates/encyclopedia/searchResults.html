@@ -1,0 +1,22 @@
+{% extends 'encyclopedia/layout.html' %}
+{%block title %}
+Pages Found:
+{%endblock %}
+
+
+
+{%block body %}
+
+
+   {% for entry in likeEntries %}
+     <ul>
+         <li><a href="{{entry}}">{{entry}}</a></li>
+     </ul>
+        
+
+   {%endfor%}
+   <h2>{{head}}</h2>
+   {{warning}}
+  
+
+{%endblock%}
